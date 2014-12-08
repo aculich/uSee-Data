@@ -1,0 +1,254 @@
+CHE01 = vector()
+weathers = weather.data$HE01
+num = length(weathers)
+for (i in 1:num){
+  CHE01 = c(CHE01,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE01)
+
+CHE02 = vector()
+weathers = weather.data$HE02
+num = length(weathers)
+for (i in 1:num){
+  CHE02 = c(CHE02,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE02)
+
+CHE03 = vector()
+weathers = weather.data$HE03
+num = length(weathers)
+for (i in 1:num){
+  CHE03 = c(CHE03,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE03)
+
+CHE04 = vector()
+weathers = weather.data$HE04
+num = length(weathers)
+for (i in 1:num){
+  CHE04 = c(CHE04,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE04)
+
+CHE05 = vector()
+weathers = weather.data$HE05
+num = length(weathers)
+for (i in 1:num){
+  CHE05 = c(CHE05,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE05)
+
+CHE06 = vector()
+weathers = weather.data$HE06
+num = length(weathers)
+for (i in 1:num){
+  CHE06 = c(CHE06,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE06)
+
+CHE07 = vector()
+weathers = weather.data$HE07
+num = length(weathers)
+for (i in 1:num){
+  CHE07 = c(CHE07,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE07)
+
+CHE08 = vector()
+weathers = weather.data$HE08
+num = length(weathers)
+for (i in 1:num){
+  CHE08 = c(CHE08,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE08)
+
+CHE09 = vector()
+weathers = weather.data$HE09
+num = length(weathers)
+for (i in 1:num){
+  CHE09 = c(CHE09,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE09)
+
+CHE10 = vector()
+weathers = weather.data$HE10
+num = length(weathers)
+for (i in 1:num){
+  CHE10 = c(CHE10,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE10)
+
+CHE11 = vector()
+weathers = weather.data$HE11
+num = length(weathers)
+for (i in 1:num){
+  CHE11 = c(CHE11,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE11)
+
+CHE12 = vector()
+weathers = weather.data$HE12
+num = length(weathers)
+for (i in 1:num){
+  CHE12 = c(CHE12,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE12)
+
+CHE13 = vector()
+weathers = weather.data$HE13
+num = length(weathers)
+for (i in 1:num){
+  CHE13 = c(CHE13,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE13)
+
+CHE14 = vector()
+weathers = weather.data$HE14
+num = length(weathers)
+for (i in 1:num){
+  CHE14 = c(CHE14,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE14)
+
+CHE15 = vector()
+weathers = weather.data$HE15
+num = length(weathers)
+for (i in 1:num){
+  CHE15 = c(CHE15,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE15)
+
+CHE16 = vector()
+weathers = weather.data$HE16
+num = length(weathers)
+for (i in 1:num){
+  CHE16 = c(CHE16,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE16)
+
+CHE17 = vector()
+weathers = weather.data$HE17
+num = length(weathers)
+for (i in 1:num){
+  CHE17 = c(CHE17,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE17)
+
+CHE18 = vector()
+weathers = weather.data$HE18
+num = length(weathers)
+for (i in 1:num){
+  CHE18 = c(CHE18,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE18)
+
+CHE19 = vector()
+weathers = weather.data$HE19
+num = length(weathers)
+for (i in 1:num){
+  CHE19 = c(CHE19,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE19)
+
+CHE20 = vector()
+weathers = weather.data$HE20
+num = length(weathers)
+for (i in 1:num){
+  CHE20 = c(CHE20,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE20)
+
+CHE21 = vector()
+weathers = weather.data$HE21
+num = length(weathers)
+for (i in 1:num){
+  CHE21 = c(CHE21,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE21)
+
+CHE22 = vector()
+weathers = weather.data$HE22
+num = length(weathers)
+for (i in 1:num){
+  CHE22 = c(CHE22,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE22)
+
+CHE23 = vector()
+weathers = weather.data$HE23
+num = length(weathers)
+for (i in 1:num){
+  CHE23 = c(CHE23,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE23)
+
+CHE24 = vector()
+weathers = weather.data$HE24
+num = length(weathers)
+for (i in 1:num){
+  CHE24 = c(CHE24,((weathers[i]*0.5) + 1))
+}
+weather.data = cbind(weather.data,CHE24)
+
+names.sample = vector()
+for (i in 1:2259){
+  if (i %in% ind){
+    names.sample = c(names.sample,u.names[i])
+  }
+}
+
+costs = matrix()
+temps = matrix()
+
+for (i in 1:67771){
+  if (names[i] %in% us){
+    cost = vector()
+    temp = vector()
+    for (j in 1:24){
+      cost = c(cost,weather.data[,i+])
+    }
+  }
+}
+
+lat.sep = function(num){
+  if (num <=3.30000e-14){
+    return (1)
+  }
+  if ((num > 3.30000e-14)&(num <= 3.45089e+01)){
+    return (2)
+  }
+  if((num > 3.69923e+01)&(num <= 3.80300e+01)){
+    return (3)
+  }
+  else{
+    return (4)
+  }
+}
+
+string = '['
+for (i in 1:31){
+  if (names[i] %in% snames){
+    string = paste(string,'{"name":"',names[i],'",')
+      string = paste(string,'"region":',lat.sep(lats[i]),',')
+      string = paste(string,'"lat":[')
+      for (k in 1:23){
+        string = paste(string,'[',k,',',lats[i],'],')
+      }
+      string = paste(string,'[',24,',',lats[24],']]')
+      string = paste(string,'"price":[')
+      for (k in 1:23){
+        string = paste(string, '[',k,',',weather.data[,(53+k)][1],'],')
+      }
+      string = paste(string, '[',24,',',weather.data[,(53+24)][1],']]')
+      string = paste(string,'"temp":[')
+      k=1
+      j=1
+      while (k <= 24){
+        string = paste('[',k,',',weather.data[,(5+j)][1],'],')
+        j = j+2
+        k = k + 1
+      }
+      string = paste('[',k,',',weather.data[,(5+j)][1],']]')
+      string = paste(string,'},')
+  }
+}
