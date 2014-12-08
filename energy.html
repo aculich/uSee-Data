@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html class="tst">
 <meta charset="utf-8">
 <title>How Temperature effects Energy Pricing</title>
 <style>
-
 @import url(style.css?aea6f0a);
 
 #chart {
@@ -128,9 +126,9 @@ var label = svg.append("text")
     .attr("y", height - 24)
     .attr("x", width)
     .text(1800);
-
 // Load the data.
-d3.json("energy.json", function(energy) {
+
+d3.json('energy.json', function(energy) {
 
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
@@ -229,7 +227,7 @@ d3.json("energy.json", function(energy) {
         name: d.name,
         region: d.region,
         income: interpolateValues(d.lat, year),
-        population: interpolateValues(d.pricing, year),
+        population: interpolateValues(d.price, year),
         temp: interpolateValues(d.temp, year)
       };
     });

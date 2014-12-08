@@ -225,8 +225,14 @@ lat.sep = function(num){
   }
 }
 
+names = weather.data$name
+snames = sort(unique(names))
+snames = snames[seq(1,2259,15)]
+
+lats = weather.data$latitude
+
 string = '['
-for (i in 1:31){
+for (i in 1:67770){
   if (names[i] %in% snames){
     string = paste(string,'{"name":"',names[i],'",')
       string = paste(string,'"region":',lat.sep(lats[i]),',')
@@ -234,21 +240,22 @@ for (i in 1:31){
       for (k in 1:23){
         string = paste(string,'[',k,',',lats[i],'],')
       }
-      string = paste(string,'[',24,',',lats[24],']]')
+      string = paste(string,'[',24,',',lats[24],']],')
       string = paste(string,'"price":[')
       for (k in 1:23){
         string = paste(string, '[',k,',',weather.data[,(53+k)][1],'],')
       }
-      string = paste(string, '[',24,',',weather.data[,(53+24)][1],']]')
+      string = paste(string, '[',24,',',weather.data[,(53+24)][1],']],')
       string = paste(string,'"temp":[')
       k=1
       j=1
-      while (k <= 24){
-        string = paste('[',k,',',weather.data[,(5+j)][1],'],')
+      while (k <= 23){
+        string = paste(string,'[',k,',',weather.data[,(5+j)][1],'],')
         j = j+2
         k = k + 1
       }
-      string = paste('[',k,',',weather.data[,(5+j)][1],']]')
+      string = paste(string,'[',k,',',weather.data[,(5+j)][1],']]')
       string = paste(string,'},')
   }
 }
+string = paste(string,']')
