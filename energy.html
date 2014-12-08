@@ -130,6 +130,8 @@ var label = svg.append("text")
 
 d3.json('energy.json', function(energy) {
 
+  console.log(energy[1])
+
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
 
@@ -181,7 +183,7 @@ d3.json('energy.json', function(energy) {
   // After the transition finishes, you can mouseover to change the year.
   function enableInteraction() {
     var yearScale = d3.scale.linear()
-        .domain([1800, 2009])
+        .domain([1, 24])
         .range([box.x + 10, box.x + box.width - 10])
         .clamp(true);
 
