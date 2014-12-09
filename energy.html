@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="tst">
 <meta charset="utf-8">
-<title>How Temperature effects Energy Pricing</title>
+<title>How Temperature affects Energy Pricing</title>
 <style>
 @import url(style.css?aea6f0a);
 
@@ -63,9 +63,19 @@ text {
 <script>
 
 // Various accessors that specify the four dimensions of data to visualize.
-function x(d) { return d.lat; }
+function x(d) { 
+  if (d.lat != undefined){
+    console.log('lat not undefined')
+    return d.lat[1];
+  } return 30
+}
 function y(d) { return d.temp; }
-function radius(d) { return d.price; }
+function radius(d) {
+  if (d.price != undefined){
+    console.log('price not undefined')
+    return d.price[1]
+  }
+    return 5; }
 function color(d) { return d.region; }
 function key(d) { return d.name; }
 
@@ -125,12 +135,13 @@ var label = svg.append("text")
     .attr("text-anchor", "end")
     .attr("y", height - 24)
     .attr("x", width)
-    .text(1800);
+    .text(1);
 // Load the data.
 
 d3.json('energy.json', function(energy) {
 
-  console.log(energy[1])
+  console.log(energy[1].lat[1])
+  console.log(energy[1].price[1])
 
   // A bisector since many nation's data is sparsely-defined.
   var bisect = d3.bisector(function(d) { return d[0]; });
@@ -139,7 +150,7 @@ d3.json('energy.json', function(energy) {
   var dot = svg.append("g")
       .attr("class", "dots")
     .selectAll(".dot")
-      .data(interpolateData(1800))
+      .data(interpolateData(1))
     .enter().append("circle")
       .attr("class", "dot")
       .style("fill", function(d) { return colorScale(color(d)); })
